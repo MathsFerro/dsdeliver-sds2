@@ -10,7 +10,4 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 	
 	List<Product> findAllByOrderByNameAsc(); // Explicação 1:35:00 - Aula 01
 	
-	@Query(value = "SELECT * FROM tb_product ORDER BY name DESC", nativeQuery = true)
-	List<Product> findAllOrderDesc(); 
-	
 }
